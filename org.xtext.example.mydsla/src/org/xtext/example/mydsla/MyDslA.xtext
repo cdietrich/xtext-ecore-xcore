@@ -1,0 +1,29 @@
+grammar org.xtext.example.mydsla.MyDslA with org.eclipse.xtext.common.Terminals
+
+import "http://www.itemis.de/some" as some
+import "http://www.itemis.de/axcore" as a
+
+ModelA returns a::ModelA:
+	elements+=Element+;
+	
+Element returns a::Element:
+	XAClass | XAClass2 | XAClass3
+;
+
+XAClass returns a::XAClass:
+	"a1" name=ID
+;
+
+
+XAClass2 returns a::XAClass2:
+	"a2" name=ID
+;
+
+
+XAClass3 returns a::XAClass3:
+	"a3" someClass=SomeEClass
+;
+
+SomeEClass returns some::SomeEClass:
+	name=ID
+;

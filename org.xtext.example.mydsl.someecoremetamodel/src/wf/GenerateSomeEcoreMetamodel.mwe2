@@ -1,0 +1,23 @@
+module wf.GenerateSomeEcoreMetamodel
+
+var platformUri = ".."
+
+Workflow {
+	
+	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+		platformUri = platformUri
+		scanClassPath = true
+	}
+	bean = org.eclipse.xtext.ecore.EcoreSupport {
+		
+	}
+	
+	component = org.eclipse.emf.mwe.utils.DirectoryCleaner {
+		directory = "src-gen"
+	}
+	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {
+		genModel = "platform:/resource/org.xtext.example.mydsl.someecoremetamodel/model/some.genmodel"
+		srcPath = "platform:/resource/org.xtext.example.mydsl.someecoremetamodel/src"
+	}
+	
+}

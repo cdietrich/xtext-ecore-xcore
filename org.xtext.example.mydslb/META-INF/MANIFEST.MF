@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.example.mydslb
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.example.mydslb; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.xtext.example.mydsla,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.xtext.example.mydsl.axcoremetamodel;visibility:=reexport,
+ org.xtext.example.mydsl.bxcoremetamodel;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.xtext.example.mydslb.scoping,
+ org.xtext.example.mydslb.generator,
+ org.xtext.example.mydslb,
+ org.xtext.example.mydslb.serializer,
+ org.xtext.example.mydslb.parser.antlr,
+ org.xtext.example.mydslb.validation,
+ org.xtext.example.mydslb.services,
+ org.xtext.example.mydslb.parser.antlr.internal
+Import-Package: org.apache.log4j

@@ -1,0 +1,29 @@
+grammar org.xtext.example.mydslb.MyDslB with org.xtext.example.mydsla.MyDslA
+
+import "http://www.itemis.de/some" as some
+import "http://www.itemis.de/axcore" as a
+import "http://www.itemis.de/bxcore" as b
+
+ModelB returns b::ModelB:
+	elements+=Element+;
+
+@Override 
+Element returns a::Element:
+		super | XBClass | XBClass2 | XBClass3 | XBClass4 | XBClass5 
+	;
+
+XBClass returns b::XBClass:
+	"b1" name=ID
+;	
+XBClass2 returns b::XBClass2:
+	"b2" name=ID
+;	
+XBClass3 returns b::XBClass3:
+	"b3" someClass=SomeEClass
+;	
+XBClass4 returns b::XBClass4:
+	"b4" name=ID
+;	
+XBClass5 returns b::XBClass5:
+	"b5" a=XAClass
+;	
