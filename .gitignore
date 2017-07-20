@@ -5,3 +5,6 @@ xtend-gen
 generated
 xcore-gen
 .settings
+.launch
+.antlr-generator-3.2.0-patch.jar
+.gitignore

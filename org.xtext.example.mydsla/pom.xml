@@ -89,31 +89,31 @@
 				<configuration>
 					<filesets combine.children="append">
 						<fileset>
-							<directory>${basedir}/../org.xtext.example.mydsl/src-gen/</directory>
+							<directory>${basedir}/../org.xtext.example.mydsla/src-gen/</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
 						</fileset>
 						<fileset>
-							<directory>${basedir}/../org.xtext.example.mydsl.tests/src-gen/</directory>
+							<directory>${basedir}/../org.xtext.example.mydsla.tests/src-gen/</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
 						</fileset>
 						<fileset>
-							<directory>${basedir}/../org.xtext.example.mydsl.ide/src-gen/</directory>
+							<directory>${basedir}/../org.xtext.example.mydsla.ide/src-gen/</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
 						</fileset>
 						<fileset>
-							<directory>${basedir}/../org.xtext.example.mydsl.ui/src-gen/</directory>
+							<directory>${basedir}/../org.xtext.example.mydsla.ui/src-gen/</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
 						</fileset>
 						<fileset>
-							<directory>${basedir}/../org.xtext.example.mydsl.ui.tests/src-gen/</directory>
+							<directory>${basedir}/../org.xtext.example.mydsla.ui.tests/src-gen/</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
