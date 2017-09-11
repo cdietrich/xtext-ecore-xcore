@@ -23,6 +23,7 @@
 	</properties>
 	<modules>
 		<module>org.xtext.example.mydsl.target</module>
+		<module>dully</module>
 		<module>org.xtext.example.mydsl.someecoremetamodel</module>
 		<module>org.xtext.example.mydsl.axcoremetamodel</module>
 		<module>org.xtext.example.mydsl.bxcoremetamodel</module>

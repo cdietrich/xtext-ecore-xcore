@@ -38,6 +38,7 @@
 					</execution>
 				</executions>
 				<configuration>
+					
 					<languages>
 						<language>
 							<setup>org.eclipse.xtext.ecore.EcoreSupport</setup>
@@ -46,10 +47,12 @@
 							<setup>org.eclipse.emf.codegen.ecore.xtext.GenModelSupport</setup>
 						</language>
 						<language>
-							<setup>org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup</setup>
+							<setup>dully.XcoreStandaloneSetup2</setup>
 							<outputConfigurations>
 								<outputConfiguration>
+									
 									<outputDirectory>${project.basedir}/xcore-gen</outputDirectory>
+									
 								</outputConfiguration>
 							</outputConfigurations>
 
@@ -68,8 +71,17 @@
 						in generated code for GreetingsHelper.compileAllGreetings(). It does work, 
 						however, for xtend-maven-plugin. (see https://github.com/eclipse/xtext-maven/issues/11)-->
 					<javaSourceVersion>1.8</javaSourceVersion>
+					
+					
+					
 				</configuration>
 				<dependencies>
+				
+					<dependency>
+						<groupId>org.xtext.example.mydsl</groupId>
+						<artifactId>dully</artifactId>
+						<version>${project.version}</version>
+					</dependency>
 			
 					<dependency>
 						<groupId>org.eclipse.platform</groupId>

@@ -10,8 +10,14 @@
       <!-- @generated axcore -->
       <package
             uri="http://www.itemis.de/axcore"
-            class="axcore.AxcorePackage"
-            genModel="model/axcore.xcore"/>
+            class="axcore.AxcorePackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated axcore -->
+      <parser
+            type="axcore"
+            class="axcore.util.AxcoreResourceFactoryImpl"/>
    </extension>
 
 </plugin>

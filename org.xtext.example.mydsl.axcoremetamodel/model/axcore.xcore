@@ -1,7 +1,12 @@
 @Ecore(nsURI="http://www.itemis.de/axcore")
+
 @GenModel(
+	modelPluginID="org.xtext.example.mydsl.axcoremetamodel",
 	modelDirectory="org.xtext.example.mydsl.axcoremetamodel/xcore-gen",
-	operationReflection="false"
+	 editDirectory="org.xtext.example.mydsl.axcoremetamodel.edit/src-gen",
+	editPluginID="org.xtext.example.mydsl.axcoremetamodel.edit", 
+	editorDirectory="org.xtext.example.mydsl.axcoremetamodel.editor/src-gen",
+	editorPluginID="org.xtext.example.mydsl.axcoremetamodel.editor", forceOverwrite="true", resource="XMI", complianceLevel="7.0"
 )
 package axcore
 
